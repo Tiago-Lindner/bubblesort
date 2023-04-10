@@ -122,4 +122,14 @@ class AppTest {
         assertArrayEquals(vetO, vet1);
     }
 
+    @Test
+    @DisplayName("array vazio")
+    void testApp11() {
+        BubbleSort bubble = new BubbleSort();
+        int[] vetO = {};
+        int[] vet1 = vetO;
+        bubble.sort(vet1);
+        assertArrayEquals(vetO, vet1);
+    }
+
 }
